@@ -10,7 +10,7 @@ style_block = '<style>\n%s\n</style>'
 
 with open(sys.argv[1]) as f:
   # skip the heading comments
-  code = f.read().split('\n\n', 1)[1]
+  code = f.read()
 
 print('Pygments version: %s' % pygments.__version__)
 print()
